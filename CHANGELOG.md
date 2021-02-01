@@ -8,6 +8,8 @@ and this project adheres to
 
 ## [Unreleased]
 
+## [1.0.0] - 2021-02-01
+
 ### Add
 
 - `b`: A curried binary composition function.
@@ -17,6 +19,5 @@ and this project adheres to
 - Inline documentation with pseudohaskell type diagrams.
 - README docs.
 
-[unreleased]: https://github.com/{user}/{repo}/compare/{version}...HEAD
-
-<!-- [{version}]: https://github.com/{user/{repo}/releases/tag/{version} -->
+[unreleased]: https://github.com/jajaperson/copb/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/{user/{repo}/releases/tag/v1.0.0

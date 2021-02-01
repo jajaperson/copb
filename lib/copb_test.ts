@@ -1,6 +1,6 @@
 import { assertEquals } from "https://deno.land/std/testing/asserts.ts";
 import * as iter from "https://deno.land/x/iter@v2.2.0/fp.ts";
-import { c, o, p, b } from "./copb.ts";
+import { b, c, o, p } from "./copb.ts";
 
 Deno.test("b", () => {
   const f = (x: number) => x * 4;
@@ -16,7 +16,7 @@ Deno.test("c", () => {
   dummyFoldable.fn = (x: unknown) => x;
   assertEquals(
     c(dummyFoldable)("In search of identity..."),
-    "In search of identity..."
+    "In search of identity...",
   );
 });
 
@@ -28,18 +28,18 @@ Deno.test("o and p", () => {
   const fromCharCode = String.fromCharCode;
 
   const composed = c(
-    o(firstCharCode)(fromCharCode)(triple)(firstCharCode)(str)(add5)(triple)
+    o(firstCharCode)(fromCharCode)(triple)(firstCharCode)(str)(add5)(triple),
   );
   const piped = c(
-    p(triple)(add5)(str)(firstCharCode)(triple)(fromCharCode)(firstCharCode)
+    p(triple)(add5)(str)(firstCharCode)(triple)(fromCharCode)(firstCharCode),
   );
 
   assertEquals(composed(12), 156);
   assertEquals(piped(12), 156);
 
-  const iterPipe = c(p(iter.map<number>(x => x * 100))(iter.take(100)))
+  const iterPipe = c(p(iter.map<number>((x) => x * 100))(iter.take(100)));
 
   for (const rand of iterPipe(iter.create.randomNumbers())) {
-    assertEquals(composed(rand), piped(rand))
+    assertEquals(composed(rand), piped(rand));
   }
 });

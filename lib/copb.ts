@@ -70,7 +70,7 @@ export function p<O1, I>(first: Lmbd<I, O1>) {
  * @typeParam I2 - Refer to signature.
  */
 export function o<I1, O>(outside: Lmbd<O, I1>) {
-  function oPartial<i2>(inside: Lmbd<i2, O>) {
+  function oPartial<I2>(inside: Lmbd<I2, O>) {
     const composed = b(outside)(inside);
     return o(composed);
   }

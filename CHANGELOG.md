@@ -15,6 +15,7 @@ and this project adheres to
 - `p`: An indefinite length pipe function (`o` in reverse).
 - `c`: A function for wrapping compositional stacks.
 - Inline documentation with pseudohaskell type diagrams.
+- README docs.
 
 [unreleased]: https://github.com/{user}/{repo}/compare/{version}...HEAD
 

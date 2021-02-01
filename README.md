@@ -1,6 +1,6 @@
-# copb
+# copb [![Version](https://img.shields.io/github/v/tag/jajaperson/copb?label=version)](https://github.com/jajaperson/copb/releases) [![Build Status](https://img.shields.io/github/workflow/status/jajaperson/copb/Test%20Deno%20Module)](https://github.com/jajaperson/copb/actions?query=workflow%3A%22Test+Deno+Module%22)
 
-A functional composition framework built for typescript that provides type
+A functional composition framework built for TypesScript that provides type
 safety without the need for the usual countless overloads, thanks to some
 functional type trickery.
 

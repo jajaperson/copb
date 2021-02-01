@@ -8,6 +8,13 @@ and this project adheres to
 
 ## [Unreleased]
 
+### Add
+
+- `b`: A curried binary composition function.
+- `o`: An indefinite length composition function.
+- `p`: An indefinite length pipe function (`o` in reverse).
+- `c`: A function for wrapping compositional stacks.
+
 [unreleased]: https://github.com/{user}/{repo}/compare/{version}...HEAD
 
 <!-- [{version}]: https://github.com/{user/{repo}/releases/tag/{version} -->

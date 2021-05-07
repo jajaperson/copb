@@ -89,7 +89,7 @@ result.
 const m = c(o<string, string>(f)<number>(g)<number>(h)<number>(l));
 ```
 
-For `p`, each annotation represents the output type of the followind node, and
+For `p`, each annotation represents the output type of the following node, and
 the second annotation of the first node represents the final input.
 
 ```ts

@@ -37,7 +37,7 @@ Deno.test("o and p", () => {
   assertEquals(composed(12), 156);
   assertEquals(piped(12), 156);
 
-  const iterPipe = c(p(iter.map<number>((x) => x * 100))(iter.take(100)));
+  const iterPipe = c(p(iter.map<number>((x) => x * 100))<Iterable<number>>(iter.take(100)));
 
   for (const rand of iterPipe(iter.create.randomNumbers())) {
     assertEquals(composed(rand), piped(rand));

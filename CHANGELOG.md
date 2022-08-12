@@ -8,6 +8,8 @@ and this project adheres to
 
 ## [Unreleased]
 
+- NPM support :tada:
+
 ## [1.0.0] - 2021-02-01
 
 ### Add

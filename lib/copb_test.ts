@@ -1,5 +1,5 @@
 import { assertEquals } from "https://deno.land/std/testing/asserts.ts";
-import * as iter from "https://deno.land/x/iter@v2.2.0/fp.ts";
+import * as iter from "https://deno.land/x/iter@v2.5.0/fp.ts";
 import { b, c, o, p } from "./copb.ts";
 
 Deno.test("b", () => {

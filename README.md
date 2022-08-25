@@ -8,7 +8,7 @@ This module contains just 4 curried functions: [`c`](#c), [`o`](#o), [`p`](#p), 
 
 ## npm install
 
-`copb` is available on [npm](https://npmjs.com/package/copb) as well as <deno.land/x/copb>.
+`copb` is available on [npm](https://npmjs.com/package/copb) as well as <https://deno.land/x/copb>.
 
 ```sh
 npm install --save copb

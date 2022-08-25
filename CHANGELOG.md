@@ -8,6 +8,8 @@ and this project adheres to
 
 ## [Unreleased]
 
+## [1.0.1] - 2022-08-25
+
 ### Add
 
 - NPM support :tada:
@@ -28,5 +30,6 @@ and this project adheres to
 - Inline documentation with pseudohaskell type diagrams.
 - README docs.
 
-[unreleased]: https://github.com/jajaperson/copb/compare/v1.0.0...HEAD
+[unreleased]: https://github.com/jajaperson/copb/compare/v1.0.1...HEAD
+[1.0.1]: https://github.com/jajaperson/copb/releases/tag/v1.0.1
 [1.0.0]: https://github.com/jajaperson/copb/releases/tag/v1.0.0

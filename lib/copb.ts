@@ -11,7 +11,7 @@ interface Lmbd<A, B> {
 }
 
 /**
- * A functional composition stack. The result of either `p` or `o`. The folded
+ * A functional composition stack. The result of either `p` or `o`. The built
  * function will have the signature.
  * ```haskell
  * f :: I -> O
@@ -41,7 +41,7 @@ export function b<B, C>(f: Lmbd<B, C>) {
 }
 
 /**
- * Composes a `CompositionalStack` from arguments of succeeding calls. The
+ * Composes a {@link CompositionalStack} from arguments of succeeding calls. The
  * inside-most lambdas are on the left.
  * ```haskell
  * p :: (I -> O1) -> (O1 -> O2) -> (O2 -> O3) -> -- ...
@@ -60,8 +60,8 @@ export function p<O1, I>(first: Lmbd<I, O1>) {
 }
 
 /**
- * Composes a `CompositionalStack` from arguments of succeeding calls. The
- * inside-most lambdas are on the left.
+ * Composes a {@link CompositionalStack} from arguments of succeeding calls. The
+ * inside-most lambdas are on the right.
  * ```haskell
  * o :: (I1 -> O) -> (I2 -> I1) -> (I3 -> I2) -> -- ...
  * ```
@@ -79,7 +79,7 @@ export function o<I1, O>(outside: Lmbd<O, I1>) {
 }
 
 /**
- * Folds a `CompositionalStack` into a callable function.
+ * Builds a {@link CompositionalStack} into a callable function.
  * ```haskell
  * c :: CompositionalStack I O -> I -> O
  * ```

@@ -8,7 +8,14 @@ and this project adheres to
 
 ## [Unreleased]
 
+### Add
+
 - NPM support :tada:
+
+### Change
+
+- Update README docs.
+- Fix some errors in the inline documentation.
 
 ## [1.0.0] - 2021-02-01
 
@@ -22,4 +29,4 @@ and this project adheres to
 - README docs.
 
 [unreleased]: https://github.com/jajaperson/copb/compare/v1.0.0...HEAD
-[1.0.0]: https://github.com/{user/{repo}/releases/tag/v1.0.0
+[1.0.0]: https://github.com/jajaperson/copb/releases/tag/v1.0.0
